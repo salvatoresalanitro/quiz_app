@@ -34,11 +34,11 @@ class _QuizState extends State<Quiz> {
 
   @override
   Widget build(BuildContext context) {
-    
+
     final screenWidget = switch (activeScreen) {
-      'start-screen' => StartScreen(switchScreen),
+      'start-screen' => StartScreen(startQuiz: switchScreen),
       'questions-screen' => QuestionsScreen(onSelectAnswer: chooseAnswer),
-      _ => ResultsScreen(),
+      _ => ResultsScreen(choosenAnswer: selectedAnswers,),
     };
 
 
