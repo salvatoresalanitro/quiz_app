@@ -3,12 +3,12 @@ import 'package:quiz_app/gradient_container.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
         body: GradientContainer(
           gradientColors: [
-            const Color.fromARGB(255, 255, 78, 25),
-            const Color.fromARGB(255, 253, 111, 68),
+            Color.fromARGB(255, 255, 78, 25),
+            Color.fromARGB(255, 253, 111, 68),
           ],
         ),
       ),

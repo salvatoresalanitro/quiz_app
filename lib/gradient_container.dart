@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/start_screen.dart';
 
-const Alignment startLinearGradient = Alignment.topLeft;
-const Alignment endLinearGradient = Alignment.bottomRight;
-
 class GradientContainer extends StatelessWidget {
   const GradientContainer({
     super.key,
@@ -18,11 +15,11 @@ class GradientContainer extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: gradientColors,
-          begin: startLinearGradient,
-          end: endLinearGradient,
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
         ),
       ),
-      child: Center(
+      child: const Center(
         child: StartScreen(),
       ),
     );
