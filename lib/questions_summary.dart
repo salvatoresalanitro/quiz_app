@@ -43,7 +43,6 @@ class QuestionsSummary extends StatelessWidget {
                               fontSize: 18
                             ),
                           ),
-                          const SizedBox(height: 5),
                           Text(
                             data['user_answer'] as String,
                             style: GoogleFonts.lato(
@@ -59,6 +58,7 @@ class QuestionsSummary extends StatelessWidget {
                               fontSize: 16
                             ),
                           ),
+                          const SizedBox(height: 10),
                         ],
                       ),
                     ),
